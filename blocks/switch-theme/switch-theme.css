@@ -1,0 +1,72 @@
+.switch-theme_position_header {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .switch-theme_position_header {
+    display: block;
+  }
+}
+.switch-theme__invisible-checkbox {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+.switch-theme__checkbox {
+  display: flex;
+  flex-direction: row;
+  column-gap: 22px;
+  align-items: center;
+  cursor: pointer;
+}
+.switch-theme__icon_theme_light {
+  background-image: url(../../images/switch-theme/sun.svg);
+  width: 28px;
+  height: 28px;
+}
+.switch-theme__selector {
+  display: inline-block;
+  padding: 12px 0 12px 44px;
+  margin: 0;
+  position: relative;
+}
+.switch-theme__selector::before, .switch-theme__selector::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transition: 0.3s;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.switch-theme__selector::before {
+  left: 0;
+  height: 24px;
+  margin-top: -12px;
+  width: 44px;
+  background: #FFFFFF;
+  border-radius: 9999px;
+}
+.switch-theme__selector::after {
+  left: 2px;
+  height: 20px;
+  width: 20px;
+  margin-top: -9px;
+  background: #24B47E;
+  box-shadow: 0 0 0 #FFFFFF;
+  border-radius: 9999px;
+}
+.switch-theme__invisible-checkbox:checked + .switch-theme__selector::after {
+  left: 23px;
+}
+.switch-theme__icon_theme_dark {
+  background-image: url(../../images/switch-theme/moon.svg);
+  width: 20px;
+  height: 20px;
+}
+.switch-theme_position_header {
+  margin: 316px 0 38px 0;
+}
+
+/*# sourceMappingURL=switch-theme.css.map */

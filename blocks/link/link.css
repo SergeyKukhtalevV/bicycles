@@ -19,6 +19,9 @@
     text-align: center;
   }
 }
+.link_theme_dark {
+  color: #FFF;
+}
 
 .link:hover {
   cursor: pointer;

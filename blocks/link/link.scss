@@ -23,6 +23,9 @@
       text-align: center;
     }
   }
+  &_theme_dark {
+    color: $colorTextBlackTheme;
+  }
 }
 .link:hover {
   cursor: pointer;
