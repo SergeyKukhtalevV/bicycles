@@ -9,9 +9,9 @@
   <link href="pages/index.css" rel="stylesheet"/>
   <!-- Убираем эффект мерцания из-за некорректной работы свойства transition для Google Chrome.
   Первоисточник: https://qna.habr.com/q/626572-->
-  <script> </script>
+  <script></script>
 </head>
-<body class="page">
+<body class="page page_theme_dark">
   <header class="header">
     <div class="header__container">
       <button type="button" class="button button_type_menu"></button>
@@ -22,6 +22,14 @@
           <li><a href="#training" class="link link_position_header">Тренировки</a></li>
         </ul>
       </nav>
+      <label class="switch-theme switch-theme_position_header">
+        <input type="checkbox" class="switch-theme__invisible-checkbox" name="checkbox-button-switch-theme">
+        <span class="switch-theme__checkbox">
+          <span class="switch-theme__icon switch-theme__icon_theme_light"></span>
+          <span class="switch-theme__selector"></span>
+          <span class="switch-theme__icon switch-theme__icon_theme_dark"></span>
+          </span>
+      </label>
     </div>
   </header>
   <main class="content">
