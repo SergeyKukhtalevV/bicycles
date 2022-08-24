@@ -1,5 +1,4 @@
 const content = document.querySelector('.page');
-const links = content.querySelectorAll('.link');
 const header = content.querySelector('.header');
 const menuButton = header.querySelector('.button_type_menu');
 const menu = header.querySelector('.header__menu');
@@ -13,9 +12,7 @@ menuButton.addEventListener('click', () => {
 switchThemePage.addEventListener('click', () => {
   if (selectorThemePage.checked) {
     content.classList.add('page_theme_dark');
-    links.forEach(link => link.classList.add('link_theme_dark'));
-  } else {
+    } else {
     content.classList.remove('page_theme_dark');
-    links.forEach(link => link.classList.remove('link_theme_dark'));
-  }
+    }
 });

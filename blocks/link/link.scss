@@ -3,7 +3,7 @@
 .link {
   text-decoration: none;
   transition: opacity .25s ease-in-out;
-  color: $colorTextWhiteTheme;
+  color: inherit;
   font-style: normal;
 
   &_position_header {
@@ -22,9 +22,6 @@
       font-size: 18px;
       text-align: center;
     }
-  }
-  &_theme_dark {
-    color: $colorTextBlackTheme;
   }
 }
 .link:hover {
