@@ -1,0 +1,27 @@
+.link {
+  text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
+  color: #151515;
+  font-style: normal;
+}
+.link_position_header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+}
+.link_position_header_position_header:hover {
+  opacity: 0.75;
+}
+@media screen and (max-width: 767px) {
+  .link_position_header {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=link.css.map */

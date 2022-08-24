@@ -1,8 +1,12 @@
 .page {
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: Inter, Arial, sans-serif;
   background-color: #F4F4F4;
   color: #151515;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  margin: 0;
 }
+
+/*# sourceMappingURL=page.css.map */
