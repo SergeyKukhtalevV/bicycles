@@ -1,23 +1,31 @@
 @import '../../variables/variables';
 
 .roads {
+  display: flex;
+  justify-content: flex-end;
 
   &__container {
-    max-width: 1320px;
-    padding: 20px 0 0 120px;
+    max-width: 1440px;
+    margin: 20px 0 0 120px;
+    //padding-top: 20px;
     display: grid;
-    grid-template-columns: 460px 1fr;
-    grid-template-rows: 500px 1fr;
-    row-gap: 167px;
-    column-gap: 250px;
+    //grid-template-columns: 1fr 1fr;
+    //grid-template-rows: 500px 1fr;
+    //row-gap: 167px;
+    //column-gap: 250px;
+    justify-content: space-between;
+    align-content: space-between;
   }
-  &__description {
+
+  &__text {
+    max-width: 460px;
     padding-top: 60px;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
   }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -33,19 +41,28 @@
     letter-spacing: 1px;
     color: $colorTitleBlackTheme;
   }
+
   &__bike-name {
+    height: min-content;
     padding: 0;
-    margin: 0;
+    margin: -30px 0 0 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
+    display: inline-block;
+    position: relative;
   }
+
   &__bike-name::after {
+    content: "";
+    position: absolute;
     margin-left: 30px;
     width: 132px;
     height: 2px;
-    background: #D7D4D4;
+    background-color: #D7D4D4;
+    top: 50%;
   }
+
   &__image {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
@@ -53,6 +70,24 @@
     max-height: 836px;
     width: 100%;
     height: 100%;
+    object-fit: contain;
+  }
+  &__container-image-bike {
+    position: sticky;
+    bottom: 274px;
+    left: 44%;
+    background: #F4F4F4;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    width: 440px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__image-bike {
+    width: 340px;
+    height: 260px;
     object-fit: contain;
   }
 }

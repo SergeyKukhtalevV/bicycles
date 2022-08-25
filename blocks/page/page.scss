@@ -1,15 +1,12 @@
 @import '../../variables/variables';
 
 .page {
+  //overflow: hidden;
   font-family: $font-stack;
   background-color: $whiteTheme;
   color: $colorTitleWhiteTheme;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
-
   &_theme_dark {
     background-color: $blackTheme;
     color: $colorTitleBlackTheme;
