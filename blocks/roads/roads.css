@@ -1,0 +1,55 @@
+.roads__container {
+  max-width: 1320px;
+  padding: 20px 0 0 120px;
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: 500px 1fr;
+  row-gap: 167px;
+  column-gap: 250px;
+}
+.roads__description {
+  padding-top: 60px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.roads__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background: #24B47E;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFF;
+}
+.roads__bike-name {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.roads__bike-name::after {
+  margin-left: 30px;
+  width: 132px;
+  height: 2px;
+  background: #D7D4D4;
+}
+.roads__image {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  max-width: 610px;
+  max-height: 836px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=roads.css.map */

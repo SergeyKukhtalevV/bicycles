@@ -1,0 +1,32 @@
+@import '../../variables/variables';
+
+.section {
+  border: red 1px solid;
+  background-color: inherit;
+  max-width: 1440px;
+  width: 100%;
+
+  &__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $colorTextWhiteTheme;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__description_theme_dark {
+    color: $colorTextBlackTheme;
+  }
+}
+

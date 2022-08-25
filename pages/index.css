@@ -4,5 +4,10 @@
 @import url(../blocks/link/link.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/switch-theme/switch-theme.css);
+@import url(../blocks/section/section.css);
+@import url(../blocks/container/container.css);
 /*header*/
 @import url(../blocks/header/header.css);
+
+/*roads*/
+@import url(../blocks/roads/roads.css);
