@@ -1,11 +1,13 @@
 @import '../../variables/variables';
 
 .header {
+  background-color: inherit;
   max-width: 1440px;
   width: 100%;
 
   &__container {
     align-items: center;
+    background-color: inherit;
     max-width: 1200px;
     width: 100%;
     min-height: 74px;
@@ -16,7 +18,9 @@
     justify-content: flex-end;
     position: relative;
   }
-
+&__nav {
+  background-color: inherit;
+}
   &__menu {
     background-color: inherit;
     width: 100%;

@@ -1,9 +1,11 @@
 .header {
+  background-color: inherit;
   max-width: 1440px;
   width: 100%;
 }
 .header__container {
   align-items: center;
+  background-color: inherit;
   max-width: 1200px;
   width: 100%;
   min-height: 74px;
@@ -13,6 +15,9 @@
   padding: 0;
   justify-content: flex-end;
   position: relative;
+}
+.header__nav {
+  background-color: inherit;
 }
 .header__menu {
   background-color: inherit;
