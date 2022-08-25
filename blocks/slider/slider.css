@@ -1,0 +1,47 @@
+.slider {
+  padding: 60px 0;
+}
+.slider__container {
+  margin-left: 120px;
+  max-width: 1320px;
+}
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slider__item {
+  position: relative;
+}
+.slider__text {
+  display: flex;
+  row-gap: 44px;
+  max-width: 460px;
+  flex-direction: column;
+}
+.slider__gallery {
+  margin: 56px 0 0 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slider__gallery-icon {
+  align-items: center;
+  bottom: 21px;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  background-image: url(../../images/highway/icon-highway.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.slider__gallery-icon-svg {
+  width: 50px;
+  height: 16px;
+  margin-left: 16px;
+}
+
+/*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,37 @@
+.quote {
+  padding: 120px 0 60px 0;
+}
+.quote__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 650px 460px;
+  column-gap: 80px;
+}
+.quote__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quote__title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+}
+.quote__author {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.quote__name {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+.quote__craft {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=quote.css.map */
