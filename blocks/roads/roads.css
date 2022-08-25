@@ -3,7 +3,6 @@
   justify-content: flex-end;
 }
 .roads__container {
-  max-width: 1440px;
   margin: 20px 0 0 120px;
   display: grid;
   justify-content: space-between;
