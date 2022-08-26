@@ -1,0 +1,58 @@
+.bicycles {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    min-height: 604px;
+
+  }
+  &__text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__gallery {
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 176px;
+    left: 0;
+    grid-column: 1 / 3;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  &__figure {
+    margin: 0;
+    padding: 0;
+  }
+  &__image-back {
+    background: #F4F4F4;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

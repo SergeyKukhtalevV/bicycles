@@ -1,5 +1,5 @@
 .slider {
-  padding: 60px 0 0 0;
+  height: min-content;
 }
 .slider__container {
   margin-left: 120px;
@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 932px;
+  min-height: 862px;
   justify-content: flex-end;
 }
 .slider__list {
@@ -19,7 +19,7 @@
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: width 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
   top: 0;
   left: 0;
 }
@@ -32,16 +32,18 @@
 .slider__text {
   display: flex;
   row-gap: 44px;
-  max-width: 460px;
+  max-width: 470px;
   flex-direction: column;
 }
 .slider__gallery {
-  margin: 56px 0 0 0;
+  margin: 82px 0 0 0;
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
 }
 .slider__gallery-icon {
   align-items: center;
@@ -63,7 +65,7 @@
   display: flex;
   flex-direction: row;
   column-gap: 20px;
-  margin-bottom: 132px;
+  margin-bottom: 62px;
 }
 .slider__button {
   width: 50px;
