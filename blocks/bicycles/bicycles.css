@@ -38,6 +38,13 @@
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.bicycles__gallery_active {
+  opacity: 1;
+  visibility: visible;
 }
 .bicycles__figure {
   margin: 0;
@@ -45,13 +52,20 @@
 }
 .bicycles__image-back {
   background: #F4F4F4;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
   border-radius: 20px;
   width: 380px;
   height: 380px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.bicycles__model-name {
+  margin: 22px 0 0 6px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=bicycles.css.map */

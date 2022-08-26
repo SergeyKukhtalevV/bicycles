@@ -1,0 +1,28 @@
+.switch-bicycles {
+  transition: opacity .25s ease-in-out;
+
+  &__invisible-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__visible-radio {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    opacity: .7;
+  }
+
+  &__invisible-radio:checked + &__visible-radio {
+    opacity: 1;
+  }
+}
+
+.switch-bicycles:hover {
+  opacity: .6;
+  cursor: pointer;
+}
