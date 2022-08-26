@@ -35,9 +35,9 @@ function prevSlide() {
 }
 
 function activeSlide(n) {
-  for (item of sliderItems) {
+  sliderItems.forEach((item) => {
     item.classList.remove('slider__item_active');
-  }
+  });
   sliderItems[n].classList.add('slider__item_active');
 }
 

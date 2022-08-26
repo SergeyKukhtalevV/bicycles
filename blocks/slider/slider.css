@@ -1,10 +1,14 @@
 .slider {
-  padding: 60px 0;
-  position: relative;
+  padding: 60px 0 0 0;
 }
 .slider__container {
   margin-left: 120px;
   max-width: 1320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 932px;
+  justify-content: flex-end;
 }
 .slider__list {
   list-style: none;
@@ -12,12 +16,12 @@
   padding: 0;
 }
 .slider__item {
-  position: relative;
+  position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: width 0.25s ease-in-out, opacity 0.25s ease-in-out;
-  width: 0;
-  height: 0;
+  top: 0;
+  left: 0;
 }
 .slider__item_active {
   opacity: 1;
@@ -45,7 +49,7 @@
   display: flex;
   width: 100px;
   height: 40px;
-  background-image: url(../../images/highway/icon-highway.svg);
+  background-image: url(../../images/highway/icon-background.svg);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -56,10 +60,10 @@
   margin-left: 16px;
 }
 .slider__pagination {
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+  margin-bottom: 132px;
 }
 .slider__button {
   width: 50px;

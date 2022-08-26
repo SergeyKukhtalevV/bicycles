@@ -1,8 +1,10 @@
 .section {
   background-color: inherit;
+  box-sizing: border-box;
   max-width: 1440px;
   width: 100%;
   height: min-content;
+  border: 1px solid red;
 }
 .section__title {
   font-weight: 700;
