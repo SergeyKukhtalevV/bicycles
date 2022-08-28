@@ -40,5 +40,19 @@ function activeSlide(n) {
   });
   sliderItems[n].classList.add('slider__item_active');
 }
+/////////////////////////////////////////////////////////
+const switchBicycles = content.querySelectorAll('.switch-bicycles__invisible-radio');
+const galleryBicycles = content.querySelectorAll('.bicycles__gallery');
 
-
+switchBicycles.forEach((switchBicycle, index) => {
+  switchBicycle.addEventListener('click', () =>{
+    galleryBicycles.forEach((galleryBicycle, key) =>{
+      if(key === index) {
+        galleryBicycle.classList.add('bicycles__gallery_active');
+      } else {
+        galleryBicycle.classList.remove('bicycles__gallery_active');
+      }
+    });
+  });
+});
+/////////////////////////////////////////////////////////
