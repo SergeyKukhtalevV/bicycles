@@ -68,5 +68,10 @@
 .switch-theme_position_header {
   margin: 316px 0 38px 0;
 }
+.switch-theme_position_footer {
+  grid-row: 3/4;
+  align-self: end;
+  justify-self: end;
+}
 
 /*# sourceMappingURL=switch-theme.css.map */

@@ -20,3 +20,7 @@
 @import url(../blocks/bicycles/bicycles.css);
 /*switch-bicycles*/
 @import url(../blocks/switch-bicycles/switch-bicycles.css);
+/*training*/
+@import url(../blocks/training/training.css);
+/*footer*/
+@import url(../blocks/footer/footer.css);

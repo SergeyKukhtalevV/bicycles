@@ -27,6 +27,24 @@
   background-image: url(../../images/header/icon-close.svg);
   background-size: cover;
 }
+.button_type_submit {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  right: 11px;
+  width: 16px;
+  height: 28px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: right;
+}
+.button_type_submit:hover {
+  opacity: 1;
+}
 
 .button:hover {
   cursor: pointer;

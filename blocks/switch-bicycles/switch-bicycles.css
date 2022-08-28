@@ -1,5 +1,5 @@
 .switch-bicycles {
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, font-weight 0.25s ease-in-out;
 }
 .switch-bicycles__invisible-radio {
   position: absolute;
@@ -9,7 +9,7 @@
   clip: rect(0 0 0 0);
 }
 .switch-bicycles__visible-radio {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   text-align: right;
@@ -17,6 +17,7 @@
 }
 .switch-bicycles__invisible-radio:checked + .switch-bicycles__visible-radio {
   opacity: 1;
+  font-weight: 600;
 }
 
 .switch-bicycles:hover {

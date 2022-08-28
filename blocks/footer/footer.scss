@@ -1,0 +1,83 @@
+.footer {
+  padding: 80px 0 60px 0;
+  background: #EFEFEF;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 360px 1fr;
+    row-gap: 50px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    margin-top: -6px;
+    max-width: 230px;
+  }
+
+  &__form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 360px;
+  }
+
+  &__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__email {
+    padding-left: 20px;
+    background: inherit;
+    border: 1px solid rgba(199, 199, 199, 0.5);
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 360px;
+    height: 50px;
+    outline: none;
+  }
+
+  &__email::placeholder {
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    opacity: .7;
+  }
+
+  &__email:hover {
+    cursor: pointer;
+  }
+
+  &__email:focus-visible {
+    border: 1px solid #C7C7C7;
+    cursor: auto;
+
+  }
+
+  &__email:focus-visible + .button_type_submit {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__copyright {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CFCFCF;
+    grid-row: 3 / 4;
+    align-self: end;
+  }
+}

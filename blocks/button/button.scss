@@ -4,7 +4,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
 
   &_type_menu {
@@ -17,6 +17,7 @@
     height: 0;
 
   }
+
   @media screen and (max-width: 767px) {
     &_type_menu {
       margin-right: 18px;
@@ -26,11 +27,33 @@
       height: 22px;
     }
   }
+
   &_type_close {
     background-image: url(../../images/header/icon-close.svg);
     background-size: cover;
   }
+
+  &_type_submit {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 20%;
+    right: 11px;
+    width: 16px;
+    height: 28px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  &_type_submit:hover {
+    opacity: 1;
+  }
 }
+
 .button:hover {
   cursor: pointer;
   opacity: 0.6;

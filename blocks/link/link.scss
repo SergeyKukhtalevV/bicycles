@@ -11,10 +11,12 @@
     font-size: 14px;
     line-height: 18px;
     text-align: right;
+  }
 
-    &_position_header:hover {
-      opacity: .75;
-    }
+  &_position_training {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   @media screen and (max-width: 767px) {
@@ -26,5 +28,6 @@
 }
 .link:hover {
   cursor: pointer;
+  opacity: .75;
 }
 

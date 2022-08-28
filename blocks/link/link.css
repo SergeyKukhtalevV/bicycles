@@ -10,8 +10,10 @@
   line-height: 18px;
   text-align: right;
 }
-.link_position_header_position_header:hover {
-  opacity: 0.75;
+.link_position_training {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
 }
 @media screen and (max-width: 767px) {
   .link_position_header {
@@ -22,6 +24,7 @@
 
 .link:hover {
   cursor: pointer;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=link.css.map */
