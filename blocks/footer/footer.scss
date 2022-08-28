@@ -1,6 +1,8 @@
+@import '../../variables/variables';
+
 .footer {
   padding: 80px 0 60px 0;
-  background: #EFEFEF;
+  background: $lightThemeFooter;
 
   &__container {
     max-width: 1200px;
@@ -47,6 +49,10 @@
     outline: none;
   }
 
+  &__email_theme_dark {
+    border: 1px solid rgba(125, 125, 125, 0.5);
+  }
+
   &__email::placeholder {
     color: inherit;
     font-family: inherit;
@@ -54,6 +60,10 @@
     font-size: 13px;
     line-height: 28px;
     opacity: .7;
+  }
+  &__email_theme_dark::placeholder {
+    opacity: 0.5;
+    color: $colorTitleDarkTheme;
   }
 
   &__email:hover {
@@ -79,5 +89,8 @@
     color: #CFCFCF;
     grid-row: 3 / 4;
     align-self: end;
+  }
+  &_theme_dark {
+    background-color: $darkThemeFooter;
   }
 }

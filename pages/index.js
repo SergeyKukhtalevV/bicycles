@@ -3,6 +3,11 @@ const header = content.querySelector('.header');
 const menuButton = header.querySelector('.button_type_menu');
 const menu = header.querySelector('.header__menu');
 const themePageSwitches = content.querySelectorAll('.switch-theme');
+const footer = content.querySelector('.footer');
+const footerInput = footer.querySelector('.footer__email')
+const descriptionSections = content.querySelectorAll('.section__description');
+const sliderButtons = content.querySelectorAll('.slider__button');
+const sliderButtonImages = content.querySelectorAll('.slider__button-image');
 //const selectorThemePage = switchThemePage.querySelector('.switch-theme__invisible-checkbox');
 
 menuButton.addEventListener('click', () => {
@@ -14,8 +19,30 @@ themePageSwitches.forEach((themePageSwitch) => {
     const selectorThemePage = themePageSwitch.querySelector('.switch-theme__invisible-checkbox');
     if (selectorThemePage.checked) {
       content.classList.add('page_theme_dark');
+      footer.classList.add('footer_theme_dark');
+      footerInput.classList.add(('footer__email_theme_dark'));
+      descriptionSections.forEach((desc) => {
+        desc.classList.add('section__description_theme_dark');
+      });
+      sliderButtons.forEach((but) => {
+        but.classList.add('slider__button_theme_dark');
+      });
+      sliderButtonImages.forEach((image) => {
+        image.classList.add('slider__button-image_theme_dark');
+      });
     } else {
       content.classList.remove('page_theme_dark');
+      footer.classList.remove('footer_theme_dark');
+      footerInput.classList.remove(('footer__email_theme_dark'));
+      descriptionSections.forEach((desc) => {
+        desc.classList.remove('section__description_theme_dark');
+      });
+      sliderButtons.forEach((but) => {
+        but.classList.remove('slider__button_theme_dark');
+      });
+      sliderButtonImages.forEach((image) => {
+        image.classList.remove('slider__button-image_theme_dark');
+      });
     }
   });
 });

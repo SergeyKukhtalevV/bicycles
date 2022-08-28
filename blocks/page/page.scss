@@ -3,13 +3,13 @@
 .page {
   //overflow: hidden;
   font-family: $font-stack;
-  background-color: $whiteTheme;
-  color: $colorTitleWhiteTheme;
+  background-color: $lightTheme;
+  color: $colorTitleLightTheme;
   box-sizing: border-box;
   margin: 0;
   &_theme_dark {
-    background-color: $blackTheme;
-    color: $colorTitleBlackTheme;
+    background-color: $darkTheme;
+    color: $colorTitleDarkTheme;
   }
 }
 

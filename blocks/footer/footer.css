@@ -42,6 +42,9 @@
   height: 50px;
   outline: none;
 }
+.footer__email_theme_dark {
+  border: 1px solid rgba(125, 125, 125, 0.5);
+}
 .footer__email::placeholder {
   color: inherit;
   font-family: inherit;
@@ -49,6 +52,10 @@
   font-size: 13px;
   line-height: 28px;
   opacity: 0.7;
+}
+.footer__email_theme_dark::placeholder {
+  opacity: 0.5;
+  color: #FFF;
 }
 .footer__email:hover {
   cursor: pointer;
@@ -70,6 +77,9 @@
   color: #CFCFCF;
   grid-row: 3/4;
   align-self: end;
+}
+.footer_theme_dark {
+  background-color: #2F2F2F;
 }
 
 /*# sourceMappingURL=footer.css.map */
