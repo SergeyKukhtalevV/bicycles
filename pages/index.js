@@ -30,6 +30,7 @@ themePageSwitches.forEach((themePageSwitch) => {
       sliderButtonImages.forEach((image) => {
         image.classList.add('slider__button-image_theme_dark');
       });
+      themePageSwitch.querySelector('.switch-theme__selector').classList.add('switch-theme__selector_theme_dark');
     } else {
       content.classList.remove('page_theme_dark');
       footer.classList.remove('footer_theme_dark');
@@ -43,6 +44,7 @@ themePageSwitches.forEach((themePageSwitch) => {
       sliderButtonImages.forEach((image) => {
         image.classList.remove('slider__button-image_theme_dark');
       });
+      themePageSwitch.querySelector('.switch-theme__selector').classList.remove('switch-theme__selector_theme_dark');
     }
   });
 });
