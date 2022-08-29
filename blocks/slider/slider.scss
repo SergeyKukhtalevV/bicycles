@@ -2,13 +2,13 @@
   height: min-content;
 
   &__container {
-    margin-left: 120px;
     max-width: 1320px;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 862px;
     justify-content: flex-end;
+
   }
 
   &__list {

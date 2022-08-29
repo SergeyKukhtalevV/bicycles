@@ -2,7 +2,6 @@
   height: min-content;
 }
 .slider__container {
-  margin-left: 120px;
   max-width: 1320px;
   position: relative;
   display: flex;
