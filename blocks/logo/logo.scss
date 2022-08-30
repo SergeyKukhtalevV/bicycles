@@ -1,0 +1,17 @@
+.logo {
+  background-image: url(../../images/footer/logo.svg);
+  background-size: contain;
+  width: 38px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  align-self: end;
+  justify-self: end;
+
+  &_position_footer {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+}

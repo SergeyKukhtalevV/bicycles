@@ -1,5 +1,9 @@
 .training {
   padding: 150px 0 120px 0;
+  @media screen and (max-width: 1023px) {
+    padding: 40px 18px 60px;
+  }
+
   &__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -8,10 +12,26 @@
     grid-template-rows: 60px repeat(2, 2fr);
     row-gap: 44px;
     justify-content: space-between;
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 40px 1fr 90px 20px;
+    }
   }
+
+
   &__image-container {
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+    @media screen and (max-width: 1023px) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__description {
+    @media screen and (max-width: 1023px){
+      grid-row: 3 / 4;
+    }
   }
   &__application {
     list-style: none;
@@ -21,9 +41,14 @@
     flex-direction: row;
     column-gap: 30px;
     align-self: end;
+    @media screen and (max-width: 1023px){
+      grid-row: 4 / 5;
+    }
   }
+
   &__image {
     max-width: 580px;
     width: 100%;
   }
+
 }

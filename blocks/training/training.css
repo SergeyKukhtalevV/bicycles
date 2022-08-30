@@ -1,6 +1,11 @@
 .training {
   padding: 150px 0 120px 0;
 }
+@media screen and (max-width: 1023px) {
+  .training {
+    padding: 40px 18px 60px;
+  }
+}
 .training__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -10,9 +15,26 @@
   row-gap: 44px;
   justify-content: space-between;
 }
+@media screen and (max-width: 1023px) {
+  .training__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 90px 20px;
+  }
+}
 .training__image-container {
   grid-column: 2/-1;
   grid-row: 1/-1;
+}
+@media screen and (max-width: 1023px) {
+  .training__image-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .training__description {
+    grid-row: 3/4;
+  }
 }
 .training__application {
   list-style: none;
@@ -22,6 +44,11 @@
   flex-direction: row;
   column-gap: 30px;
   align-self: end;
+}
+@media screen and (max-width: 1023px) {
+  .training__application {
+    grid-row: 4/5;
+  }
 }
 .training__image {
   max-width: 580px;
