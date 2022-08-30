@@ -76,5 +76,10 @@
   align-self: end;
   justify-self: end;
 }
+@media screen and (max-width: 767px) {
+  .switch-theme_position_footer {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=switch-theme.css.map */

@@ -87,5 +87,8 @@
     grid-row: 3 / 4;
     align-self: end;
     justify-self: end;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
