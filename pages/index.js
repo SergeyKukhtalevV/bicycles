@@ -79,6 +79,8 @@ const galleryBicycles = content.querySelectorAll('.bicycles__gallery');
 switchBicycles.forEach((switchBicycle, index) => {
   switchBicycle.addEventListener('click', () =>{
     galleryBicycles.forEach((galleryBicycle, key) =>{
+      index = (index > 2) ? index - 3 : index;
+      console.log(index, key);
       if(key === index) {
         galleryBicycle.classList.add('bicycles__gallery_active');
         drawDots();
@@ -109,4 +111,17 @@ function deleteDots() {
   dotsBicycles.forEach((dot) => {
     dot.remove();
   })
+}
+////////////////////////////////////////////////////////////////////
+let expanded = false;
+
+function showRadioButtons() {
+  let checkboxes = document.querySelector('.bicycles__radio-buttons');
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
 }

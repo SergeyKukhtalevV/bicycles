@@ -41,6 +41,31 @@
     display: none;
   }
 }
+.bicycles__list_type_select {
+  width: 114px;
+  height: 30px;
+}
+.bicycles__selectBox {
+  position: relative;
+}
+.bicycles__select {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #E3E3E3;
+  border-radius: 2px;
+  padding: 8px 12px;
+}
+.bicycles__over-select {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.bicycles__radio-buttons {
+  display: none;
+  border: 1px #dadada solid;
+}
 .bicycles__slider {
   width: 100%;
   position: relative;
@@ -134,6 +159,7 @@
 }
 .bicycles__image {
   margin: 20px;
+  width: 100%;
 }
 .bicycles__model-name {
   margin: 22px 0 0 6px;

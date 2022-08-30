@@ -23,5 +23,9 @@
   column-gap: 30px;
   align-self: end;
 }
+.training__image {
+  max-width: 580px;
+  width: 100%;
+}
 
 /*# sourceMappingURL=training.css.map */

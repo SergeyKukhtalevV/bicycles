@@ -1,5 +1,6 @@
 .switch-bicycles {
   transition: opacity .25s ease-in-out, font-weight .25s ease-in-out;
+  display: block;
 
   &__invisible-radio {
     position: absolute;
