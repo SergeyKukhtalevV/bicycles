@@ -29,14 +29,14 @@
   padding: 0;
   margin: 0;
 }
+.section__description_theme_dark {
+  color: #E6E6E6;
+}
 @media screen and (max-width: 1023px) {
   .section__description {
     font-size: 12px;
     line-height: 18px;
   }
-}
-.section__description_theme_dark {
-  color: #E6E6E6;
 }
 
 /*# sourceMappingURL=section.css.map */

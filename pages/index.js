@@ -9,7 +9,7 @@ const descriptionSections = content.querySelectorAll('.section__description');
 const sliderButtons = content.querySelectorAll('.slider__button');
 const sliderButtonImages = content.querySelectorAll('.slider__button-image');
 //const selectorThemePage = switchThemePage.querySelector('.switch-theme__invisible-checkbox');
-
+drawDots();
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('button_type_close');
   menu.classList.toggle('header__menu_opened');
@@ -81,10 +81,32 @@ switchBicycles.forEach((switchBicycle, index) => {
     galleryBicycles.forEach((galleryBicycle, key) =>{
       if(key === index) {
         galleryBicycle.classList.add('bicycles__gallery_active');
+        drawDots();
       } else {
+        deleteDots();
         galleryBicycle.classList.remove('bicycles__gallery_active');
       }
     });
   });
 });
 /////////////////////////////////////////////////////////
+function drawDots() {
+  const activeGalleryBicycles = content.querySelector('.bicycles__gallery_active');
+  const itemBicycles = activeGalleryBicycles.querySelectorAll('.bicycles__item');
+  const cntItemBicycles = itemBicycles.length;
+  const dotsBicycles = content.querySelector('.bicycles__dots');
+  const dotTemplate = document.querySelector('#item-template').content;
+  const dotElement = dotTemplate.querySelector('.bicycles__dot').cloneNode(true);
+
+  console.log(activeGalleryBicycles);
+  for (let i = 0; i < cntItemBicycles; i++) {
+    dotsBicycles.prepend(dotElement);
+    console.log(dotsBicycles);
+  }
+}
+function deleteDots() {
+  const dotsBicycles = content.querySelectorAll('.bicycles__dot');
+  dotsBicycles.forEach((dot) => {
+    dot.remove();
+  })
+}

@@ -22,9 +22,11 @@
     font-weight: 600;
 
   }
+
+  &:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
 }
 
-.switch-bicycles:hover {
-  opacity: .6;
-  cursor: pointer;
-}
+
