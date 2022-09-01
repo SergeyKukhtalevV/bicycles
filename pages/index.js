@@ -114,6 +114,7 @@ invisibleRadioButtons.forEach((switchBicycle, index) => {
 /////////////////////////////////////////////////////////
 function createDot() {
   const dotElement = dotTemplate.querySelector('.bicycles__dot').cloneNode(true);
+  dotElement.addEventListener('click', toggleDot);
   dotsBicycles.append(dotElement);
 }
 function drawDots() {
@@ -155,4 +156,22 @@ function showRadioButtons() {
     containerRadioButtons.style.display = "none";
     expanded = false;
   }
+}
+/////////////////////////////////////////////////////
+function toggleDot(event) {
+  const activeDot = event.target;
+  const ParentDots = activeDot.closest('.bicycles__dots');
+  const dots = ParentDots.querySelectorAll('.bicycles__dot');
+  const activeGalleryBicycles = content.querySelector('.bicycles__gallery_active');
+  const itemsBicycles = activeGalleryBicycles.querySelectorAll('.bicycles__item');
+
+  dots.forEach((dot, i) => {
+    if(dot !== activeDot) {
+      dot.classList.remove('bicycles__dot_active');
+      itemsBicycles[i].classList.remove('bicycles__item_active');
+    } else {
+      dot.classList.add('bicycles__dot_active');
+      itemsBicycles[i].classList.add('bicycles__item_active');
+    }
+  })
 }
