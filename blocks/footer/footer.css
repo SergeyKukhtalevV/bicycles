@@ -18,6 +18,8 @@
 @media screen and (max-width: 767px) {
   .footer__container {
     grid-template-columns: 1fr;
+    row-gap: 22px;
+    min-height: 272px;
   }
 }
 .footer__title {

@@ -5,7 +5,7 @@
   padding-bottom: 60px;
 
   @media screen and (max-width: 1023px) {
-    padding: 0 18px;
+    padding: 0 18px 40px;
   }
 
   &__container {
@@ -16,6 +16,7 @@
 
     @media screen and (max-width: 1023px) {
       border-top: 1px solid #E3E3E3;
+      min-height: 520px;
     }
   }
 

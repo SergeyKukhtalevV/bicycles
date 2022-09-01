@@ -1,7 +1,7 @@
 .training {
   padding: 150px 0 120px 0;
   @media screen and (max-width: 1023px) {
-    padding: 40px 18px 60px;
+    padding: 18px 18px 52px;
   }
 
   &__container {
@@ -14,7 +14,10 @@
     justify-content: space-between;
     @media screen and (max-width: 1023px) {
       grid-template-columns: 1fr;
-      grid-template-rows: 40px 1fr 90px 20px;
+      grid-template-rows: 40px 1fr 90px 30px;
+      border-top: 1px solid #E3E3E3;
+      padding-top: 40px;
+      row-gap: 40px;
     }
   }
 
@@ -31,12 +34,13 @@
   &__description {
     @media screen and (max-width: 1023px){
       grid-row: 3 / 4;
+      margin-top: -5px;
     }
   }
   &__application {
     list-style: none;
     padding: 0;
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
     display: flex;
     flex-direction: row;
     column-gap: 30px;

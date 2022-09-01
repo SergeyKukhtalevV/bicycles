@@ -4,7 +4,7 @@
 }
 @media screen and (max-width: 1023px) {
   .bicycles {
-    padding: 0 18px;
+    padding: 0 18px 40px;
   }
 }
 .bicycles__container {
@@ -16,6 +16,7 @@
 @media screen and (max-width: 1023px) {
   .bicycles__container {
     border-top: 1px solid #E3E3E3;
+    min-height: 520px;
   }
 }
 .bicycles__text {
