@@ -7,9 +7,8 @@
   }
 
   @media screen and (max-width: 767px) {
-    &_position_header {
       display: block;
-    }
+    margin-bottom: 38px;
   }
 
   &__invisible-checkbox {
@@ -39,38 +38,37 @@
     padding: 12px 0 12px 44px;
     margin: 0;
     position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transition: .25s;
+      box-sizing: border-box;
+    }
+    &::before{
+      left: 0;
+      height: 24px;
+      margin-top: -12px;
+      width: 44px;
+      background: $colorTitleDarkTheme;
+      border-radius: 9999px;
+    }
+    &::after{
+      left: 2px;
+      height: 20px;
+      width: 20px;
+      margin-top: -9px;
+      background: #24B47E;
+      box-shadow: 0 0 0 #FFFFFF;
+      border-radius: 9999px;
+    }
+    &_theme_dark::before{
+      background: #545454;
+    }
   }
 
-  &__selector::before,
-  &__selector::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transition: .3s;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  &__selector::before{
-    left: 0;
-    height: 24px;
-    margin-top: -12px;
-    width: 44px;
-    background: $colorTitleDarkTheme;
-    border-radius: 9999px;
-  }
-  &__selector::after{
-    left: 2px;
-    height: 20px;
-    width: 20px;
-    margin-top: -9px;
-    background: #24B47E;
-    box-shadow: 0 0 0 #FFFFFF;
-    border-radius: 9999px;
-  }
-  &__selector_theme_dark::before{
-    background: #545454;
-  }
   &__invisible-checkbox:checked + &__selector::after{
     left: 23px;
   }
@@ -80,9 +78,7 @@
     width: 20px;
     height: 20px
   }
-  &_position_header {
-    margin: 316px 0 38px 0;
-  }
+
   &_position_footer {
     grid-row: 3 / 4;
     align-self: end;

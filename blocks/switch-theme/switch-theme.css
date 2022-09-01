@@ -2,8 +2,9 @@
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .switch-theme_position_header {
+  .switch-theme {
     display: block;
+    margin-bottom: 38px;
   }
 }
 .switch-theme__invisible-checkbox {
@@ -35,9 +36,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  transition: 0.3s;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  transition: 0.25s;
   box-sizing: border-box;
 }
 .switch-theme__selector::before {
@@ -67,9 +66,6 @@
   background-image: url(../../images/switch-theme/moon.svg);
   width: 20px;
   height: 20px;
-}
-.switch-theme_position_header {
-  margin: 316px 0 38px 0;
 }
 .switch-theme_position_footer {
   grid-row: 3/4;

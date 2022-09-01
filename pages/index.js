@@ -1,7 +1,7 @@
 const content = document.querySelector('.page');
 const header = content.querySelector('.header');
 const menuButton = header.querySelector('.button_type_menu');
-const menu = header.querySelector('.header__menu');
+const nav = header.querySelector('.header__nav');
 const themePageSwitches = content.querySelectorAll('.switch-theme');
 const footer = content.querySelector('.footer');
 const footerInput = footer.querySelector('.footer__email')
@@ -12,7 +12,7 @@ const sliderButtonImages = content.querySelectorAll('.slider__button-image');
 drawDots();
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('button_type_close');
-  menu.classList.toggle('header__menu_opened');
+  nav.classList.toggle('header__nav_opened');
 });
 themePageSwitches.forEach((themePageSwitch) => {
   themePageSwitch.addEventListener('click', () => {
