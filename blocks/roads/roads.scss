@@ -99,7 +99,7 @@
     }
 
     @media screen and (max-width: 1023px) {
-        display: none;
+      display: none;
     }
 
     &_theme_dark::after {
@@ -124,15 +124,16 @@
     justify-self: end;
 
     @media screen and (max-width: 1023px) {
-        grid-row: 2 / 3;
-        grid-column: 1 / -1;
-        width: 90%;
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      width: 90%;
 
     }
   }
-  &__sticky-container{
+
+  &__sticky-container {
     position: absolute;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     top: 51%;
     left: 43.7%;
     height: 430px;
@@ -145,9 +146,10 @@
       height: fit-content;
     }
   }
+
   &__container-image-bike {
     position: sticky;
-    top:0;
+    top: 0;
     background: #F4F4F4;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
     border-radius: 20px;
@@ -166,7 +168,6 @@
 
   &__image-bike {
     max-width: 340px;
-    //height: 260px;
     width: 100%;
     object-fit: contain;
   }
