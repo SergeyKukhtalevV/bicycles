@@ -65,8 +65,13 @@
   min-height: 30px;
   border: 1px solid #E3E3E3;
   border-radius: 2px;
-  padding: 8px 12px;
-  background: rgb(227, 227, 227);
+  padding: 8px 6px;
+  background: #F4F4F4;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
 }
 .bicycles__over-select {
   position: absolute;
@@ -74,6 +79,7 @@
   right: 0;
   top: 0;
   bottom: 0;
+  padding-left: 6px;
 }
 .bicycles__radio-buttons {
   display: none;
@@ -81,7 +87,8 @@
   z-index: 2;
   position: absolute;
   width: 114px;
-  background: rgb(227, 227, 227);
+  box-sizing: border-box;
+  background: #F4F4F4;
 }
 .bicycles__slider {
   width: 100%;
@@ -130,32 +137,33 @@
     visibility: visible;
     opacity: 1;
   }
-  .bicycles__dots {
-    position: absolute;
-    top: 570px;
-    left: 48%;
-    display: flex;
-    column-gap: 5px;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    z-index: 3;
-    text-align: center;
-  }
-  .bicycles__dot {
-    display: block;
-    width: 4px;
-    height: 4px;
-    background-color: #CACACA;
-    border-radius: 50%;
-  }
-  .bicycles__dot_active {
-    background-color: #151515;
-  }
+}
+.bicycles__dots {
+  position: absolute;
+  top: 347px;
+  left: 46%;
+  display: flex;
+  column-gap: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  text-align: center;
+}
+.bicycles__dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #CACACA;
+  border-radius: 50%;
+}
+.bicycles__dot_active {
+  background-color: #151515;
 }
 .bicycles__figure {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .bicycles__image-back {
   background: #F4F4F4;
@@ -166,17 +174,22 @@
   max-height: 380px;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 @media screen and (max-width: 1279px) {
   .bicycles__image-back {
+    max-width: 284px;
     margin: 0 auto;
   }
 }
 .bicycles__image {
   margin: 20px;
   width: 100%;
+}
+@media screen and (max-width: 1279px) {
+  .bicycles__image {
+    margin: 25px auto 0;
+    max-width: 254px;
+  }
 }
 .bicycles__model-name {
   margin: 22px 0 0 6px;
@@ -187,8 +200,10 @@
 }
 @media screen and (max-width: 1279px) {
   .bicycles__model-name {
-    margin: 22px auto;
+    margin: 4px auto 0;
     width: fit-content;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 

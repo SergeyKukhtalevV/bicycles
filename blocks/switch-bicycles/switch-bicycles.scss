@@ -2,7 +2,7 @@
   transition: opacity .25s ease-in-out, font-weight .25s ease-in-out;
   display: block;
   @media screen and (max-width: 1279px){
-    padding: 8px 30px;
+    padding: 8px 10px;
   }
 
   &__invisible-radio {
@@ -19,6 +19,7 @@
     line-height: 28px;
     text-align: right;
     opacity: .7;
+
     @media screen and (max-width: 1279px){
       font-weight: 600;
       font-size: 11px;
