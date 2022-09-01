@@ -2,6 +2,11 @@
   transition: opacity 0.25s ease-in-out, font-weight 0.25s ease-in-out;
   display: block;
 }
+@media screen and (max-width: 1279px) {
+  .switch-bicycles {
+    padding: 8px 30px;
+  }
+}
 .switch-bicycles__invisible-radio {
   position: absolute;
   width: 1px;
@@ -15,6 +20,13 @@
   line-height: 28px;
   text-align: right;
   opacity: 0.7;
+}
+@media screen and (max-width: 1279px) {
+  .switch-bicycles__visible-radio {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+  }
 }
 .switch-bicycles__invisible-radio:checked + .switch-bicycles__visible-radio {
   opacity: 1;

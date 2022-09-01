@@ -4,12 +4,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (max-width: 1023px) {
+    padding: 0 18px;
+  }
+
   &__container {
     margin: 0 auto;
     max-width: 1200px;
     position: relative;
     min-height: 654px;
 
+    @media screen and (max-width: 1023px) {
+      border-top: 1px solid #E3E3E3;
+    }
   }
 
   &__text {
@@ -18,16 +25,21 @@
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 38px;
+
     @media screen and (max-width: 1279px) {
       flex-direction: column;
       align-items: flex-start;
+      row-gap: 40px;
     }
   }
+
   @media screen and (min-width: 1279px) {
     &__form-select {
       display: none;
     }
   }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -41,31 +53,45 @@
       display: none;
     }
   }
+
   &__list_type_select {
     width: 114px;
     height: 30px;
   }
+
   &__selectBox {
     position: relative;
   }
+
   &__select {
     width: 100%;
     min-height: 30px;
     border: 1px solid #E3E3E3;
     border-radius: 2px;
     padding: 8px 12px;
+    background: rgba(227, 227, 227, 1);
+
   }
+
   &__over-select {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+
   }
+
   &__radio-buttons {
     display: none;
     border: 1px #dadada solid;
+    z-index: 2;
+    position: absolute;
+    width: 114px;
+    background: rgba(227, 227, 227, 1);
+
   }
+
   &__slider {
     width: 100%;
     position: relative;
@@ -88,8 +114,9 @@
     visibility: hidden;
     transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
     @media screen and (max-width: 1279px) {
-        display: block;
-        margin: 0 auto;
+      top: 10px;
+      display: block;
+      margin: 0 auto;
     }
 
     &_active {
@@ -105,7 +132,6 @@
       opacity: 0;
       visibility: hidden;
       position: absolute;
-      z-index: 2;
       left: 0;
       top: 0;
       display: block;
@@ -183,9 +209,4 @@
     }
   }
 
-  @media screen and (max-width: 1279px) {
-    & {
-      padding: 40px 18px;
-    }
-  }
 }
