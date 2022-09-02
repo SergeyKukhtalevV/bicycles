@@ -17,6 +17,13 @@ const galleryBicycles = content.querySelectorAll('.bicycles__gallery');
 const dotsBicycles = content.querySelector('.bicycles__dots');
 const dotTemplate = document.querySelector('#item-template').content;
 
+const linkIntro = content.querySelector('.link_position_intro');
+linkIntro.addEventListener('mouseenter', () =>{
+  linkIntro.classList.add('fill');
+});
+linkIntro.addEventListener('mouseleave', () =>{
+  linkIntro.classList.remove('fill');
+});
 
 const optionSelectBicycle = content.querySelector('.bicycles__select-option');
 let expanded = false;

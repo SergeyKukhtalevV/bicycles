@@ -1,14 +1,14 @@
-.roads {
+.intro {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
 }
 @media screen and (max-width: 1023px) {
-  .roads {
+  .intro {
     padding-top: 0;
   }
 }
-.roads__container {
+.intro__container {
   max-width: 1320px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -17,7 +17,7 @@
   position: relative;
 }
 @media screen and (max-width: 1023px) {
-  .roads__container {
+  .intro__container {
     max-width: 1024px;
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
@@ -25,58 +25,28 @@
     padding: 40px 18px;
   }
 }
-.roads__title {
+.intro__title {
   max-width: 460px;
   padding-top: 62px;
 }
 @media screen and (max-width: 1023px) {
-  .roads__title {
+  .intro__title {
     padding-top: 0;
   }
 }
-.roads__description {
+.intro__description {
   max-width: 460px;
   padding-top: 20px;
+  height: min-content;
 }
 @media screen and (max-width: 1023px) {
-  .roads__description {
+  .intro__description {
     grid-row: 3/4;
     padding-top: 0;
     max-width: 100%;
   }
 }
-.roads__link {
-  margin-top: -26px;
-}
-@media screen and (max-width: 1023px) {
-  .roads__link {
-    grid-row: 4/5;
-    margin-top: 0;
-  }
-}
-.roads__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 50px;
-  background: #24B47E;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #FFF;
-}
-@media screen and (max-width: 1023px) {
-  .roads__button {
-    width: 100%;
-    font-size: 13px;
-    line-height: 19px;
-  }
-}
-.roads__bike-name {
+.intro__bike-name {
   height: min-content;
   padding: 0;
   margin: -16px 0 0 0;
@@ -86,7 +56,7 @@
   display: inline-block;
   position: relative;
 }
-.roads__bike-name::after {
+.intro__bike-name::after {
   content: "";
   position: absolute;
   margin-left: 30px;
@@ -96,11 +66,11 @@
   top: 50%;
 }
 @media screen and (max-width: 1023px) {
-  .roads__bike-name {
+  .intro__bike-name {
     display: none;
   }
 }
-.roads__bike-name_theme_dark::after {
+.intro__bike-name_theme_dark::after {
   content: "";
   position: absolute;
   margin-left: 30px;
@@ -109,7 +79,7 @@
   background-color: #707070;
   top: 50%;
 }
-.roads__image {
+.intro__image {
   grid-row: 1/-1;
   grid-column: 2/3;
   max-width: 610px;
@@ -120,13 +90,13 @@
   justify-self: end;
 }
 @media screen and (max-width: 1023px) {
-  .roads__image {
+  .intro__image {
     grid-row: 2/3;
     grid-column: 1/-1;
     width: 90%;
   }
 }
-.roads__sticky-container {
+.intro__sticky-container {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
   top: 44.4%;
@@ -136,14 +106,14 @@
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
-  .roads__sticky-container {
+  .intro__sticky-container {
     max-width: 234px;
     top: 41.6%;
     left: 5.4%;
     height: fit-content;
   }
 }
-.roads__container-image-bike {
+.intro__container-image-bike {
   position: sticky;
   top: 0;
   background: #F4F4F4;
@@ -156,16 +126,16 @@
   padding: 20px 50px;
 }
 @media screen and (max-width: 1023px) {
-  .roads__container-image-bike {
+  .intro__container-image-bike {
     max-width: 234px;
     max-height: 200px;
     padding: 11px 27px;
   }
 }
-.roads__image-bike {
+.intro__image-bike {
   max-width: 340px;
   width: 100%;
   object-fit: contain;
 }
 
-/*# sourceMappingURL=roads.css.map */
+/*# sourceMappingURL=intro.css.map */

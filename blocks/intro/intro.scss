@@ -1,6 +1,6 @@
 @import '../../variables/variables';
 
-.roads {
+.intro {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
@@ -38,6 +38,7 @@
   &__description {
     max-width: 460px;
     padding-top: 20px;
+    height: min-content;
 
     @media screen and (max-width: 1023px) {
       grid-row: 3 / 4;
@@ -46,38 +47,6 @@
     }
 
   }
-
-  &__link {
-    margin-top: -26px;
-
-    @media screen and (max-width: 1023px) {
-      grid-row: 4 / 5;
-      margin-top: 0;
-    }
-  }
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 50px;
-    background: #24B47E;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $colorTitleDarkTheme;
-
-    @media screen and (max-width: 1023px) {
-      width: 100%;
-      font-size: 13px;
-      line-height: 19px;
-    }
-  }
-
 
   &__bike-name {
     height: min-content;
