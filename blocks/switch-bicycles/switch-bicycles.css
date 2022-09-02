@@ -7,6 +7,10 @@
     padding: 8px 10px;
   }
 }
+.switch-bicycles:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
 .switch-bicycles__invisible-radio {
   position: absolute;
   width: 1px;
@@ -31,10 +35,6 @@
 .switch-bicycles__invisible-radio:checked + .switch-bicycles__visible-radio {
   opacity: 1;
   font-weight: 600;
-}
-.switch-bicycles:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=switch-bicycles.css.map */

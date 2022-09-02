@@ -15,6 +15,7 @@
   grid-template-rows: repeat(4, 1fr);
   padding-left: 120px;
   position: relative;
+  overflow: visible;
 }
 @media screen and (max-width: 1023px) {
   .intro__container {

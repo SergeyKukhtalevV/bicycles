@@ -15,6 +15,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     padding-left: 120px;
+    position: relative;
+    overflow: visible;
 
     @media screen and (max-width: 1023px) {
       max-width: 1024px;
@@ -37,6 +39,7 @@
   &__description {
     max-width: 460px;
     padding-top: 20px;
+    height: min-content;
 
     @media screen and (max-width: 1023px) {
       grid-row: 3 / 4;
@@ -45,38 +48,6 @@
     }
 
   }
-
-  &__link {
-    margin-top: -26px;
-
-    @media screen and (max-width: 1023px) {
-      grid-row: 4 / 5;
-      margin-top: 0;
-    }
-  }
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 50px;
-    background: #24B47E;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $colorTitleDarkTheme;
-
-    @media screen and (max-width: 1023px) {
-      width: 100%;
-      font-size: 13px;
-      line-height: 19px;
-    }
-  }
-
 
   &__bike-name {
     height: min-content;
@@ -99,7 +70,7 @@
     }
 
     @media screen and (max-width: 1023px) {
-        display: none;
+      display: none;
     }
 
     &_theme_dark::after {
@@ -124,30 +95,31 @@
     justify-self: end;
 
     @media screen and (max-width: 1023px) {
-        grid-row: 2 / 3;
-        grid-column: 1 / -1;
-        width: 90%;
-
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      width: 90%;
     }
   }
-  &__sticky-container{
+
+  &__sticky-container {
     position: absolute;
-    background-color: rgba(0,0,0,0);
-    top: 51%;
-    left: 43.7%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 44.4%;
+    left: 43.8%;
     height: 430px;
     max-width: 440px;
     width: 100%;
     @media screen and (max-width: 1023px) {
       max-width: 234px;
-      top: 56%;
-      left: 5%;
+      top: 41.6%;
+      left: 5.4%;
       height: fit-content;
     }
   }
+
   &__container-image-bike {
     position: sticky;
-    top:0;
+    top: 0;
     background: #F4F4F4;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
     border-radius: 20px;
@@ -166,7 +138,6 @@
 
   &__image-bike {
     max-width: 340px;
-    //height: 260px;
     width: 100%;
     object-fit: contain;
   }
