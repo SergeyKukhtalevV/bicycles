@@ -8,10 +8,8 @@ const footerInput = footer.querySelector('.footer__email')
 const descriptionSections = content.querySelectorAll('.section__description');
 const sliderButtons = content.querySelectorAll('.slider__button');
 const sliderButtonImages = content.querySelectorAll('.slider__button-image');
-//const selectorThemePage = switchThemePage.querySelector('.switch-theme__invisible-checkbox');
 const containerRadioButtons = content.querySelector('.bicycles__radio-buttons');
 const invisibleRadioButtons = content.querySelectorAll('.switch-bicycles__invisible-radio');
-//const switchBicycles = content.querySelectorAll('.switch-bicycles__invisible-radio');
 const galleryBicycles = content.querySelectorAll('.bicycles__gallery');
 
 const dotsBicycles = content.querySelector('.bicycles__dots');
@@ -34,11 +32,13 @@ invisibleRadioButtons.forEach((item) => {
 });
 drawDots();
 drawActiveDot();
+
 //Функция открытия и закрытия меню на смартфоне
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('button_type_close');
   nav.classList.toggle('header__nav_opened');
 });
+
 //Функция переключения темы сайта
 themePageSwitches.forEach((themePageSwitch) => {
   themePageSwitch.addEventListener('click', () => {
