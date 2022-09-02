@@ -6,7 +6,7 @@
   transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
 
   &_type_menu {
-    background-image: url(../../images/header/icon-burger.svg);
+    background-image: url(../images/header/icon-burger.svg);
     background-repeat: no-repeat;
     background-size: contain;
     visibility: hidden;
@@ -26,7 +26,7 @@
 
 
   &_type_close {
-    background-image: url(../../images/header/icon-close.svg);
+    background-image: url(../images/header/icon-close.svg);
     width: 32px;
     height: 32px;
     margin-right: 13px;

@@ -108,7 +108,7 @@
   transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 .button_type_menu {
-  background-image: url(../../images/header/icon-burger.svg);
+  background-image: url(../images/header/icon-burger.svg);
   background-repeat: no-repeat;
   background-size: contain;
   visibility: hidden;
@@ -127,7 +127,7 @@
   }
 }
 .button_type_close {
-  background-image: url(../../images/header/icon-close.svg);
+  background-image: url(../images/header/icon-close.svg);
   width: 32px;
   height: 32px;
   margin-right: 13px;
@@ -180,7 +180,7 @@
   cursor: pointer;
 }
 .switch-theme__icon_theme_light {
-  background-image: url(../../images/switch-theme/sun.svg);
+  background-image: url(../images/switch-theme/sun.svg);
   width: 28px;
   height: 28px;
 }
@@ -221,7 +221,7 @@
   left: 23px;
 }
 .switch-theme__icon_theme_dark {
-  background-image: url(../../images/switch-theme/moon.svg);
+  background-image: url(../images/switch-theme/moon.svg);
   width: 20px;
   height: 20px;
 }
@@ -291,7 +291,7 @@
 }
 
 .logo {
-  background-image: url(../../images/footer/logo.svg);
+  background-image: url(../images/footer/logo.svg);
   background-size: contain;
   width: 30px;
   height: 30px;
@@ -731,7 +731,7 @@
   display: flex;
   width: 100px;
   height: 40px;
-  background-image: url(../../images/highway/icon-background.svg);
+  background-image: url(../images/highway/icon-background.svg);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -789,13 +789,13 @@
 .slider__button-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../images/slider/icon-left.svg);
+  background-image: url(../images/slider/icon-left.svg);
   display: block;
   width: 7px;
   height: 16px;
 }
 .slider__button-image_theme_dark {
-  background-image: url(../../images/slider/icon-left-dark.svg);
+  background-image: url(../images/slider/icon-left-dark.svg);
 }
 .slider__button-image_type_right {
   transform: rotate(180deg);
