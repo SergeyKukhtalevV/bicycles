@@ -39,10 +39,20 @@
   max-width: 360px;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .footer__form {
+    max-width: 284px;
+  }
+}
 .footer__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .footer__fieldset {
+    max-width: 284px;
+  }
 }
 .footer__email {
   padding-left: 20px;

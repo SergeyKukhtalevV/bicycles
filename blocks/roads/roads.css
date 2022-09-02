@@ -14,6 +14,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   padding-left: 120px;
+  position: relative;
 }
 @media screen and (max-width: 1023px) {
   .roads__container {
@@ -128,8 +129,8 @@
 .roads__sticky-container {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-  top: 51%;
-  left: 43.7%;
+  top: 44.4%;
+  left: 43.8%;
   height: 430px;
   max-width: 440px;
   width: 100%;
@@ -137,8 +138,8 @@
 @media screen and (max-width: 1023px) {
   .roads__sticky-container {
     max-width: 234px;
-    top: 56%;
-    left: 5%;
+    top: 41.6%;
+    left: 5.4%;
     height: fit-content;
   }
 }

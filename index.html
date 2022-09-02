@@ -42,21 +42,23 @@
           только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.
         </p>
         <a href="#" class="link roads__link">
-          <button type="button" class="button roads__button">Подробнее
-          </button>
+          <!--          <button type="button" class="button roads__button">-->
+          Подробнее
+          <!--        </button>-->
         </a>
+
         <p class="roads__bike-name roads__bike-name_theme_dark">Cannondale Systemsix</p>
         <img class="roads__image" src="./images/roads/road-in-wood.jpg" alt="проселочная дорога в лесу.">
+        <div class="roads__sticky-container">
+          <div class="roads__container-image-bike">
+            <img src="./images/roads/image-cannondale.jpg" alt="Изображение велосипеда Cannondale Systemsix."
+                 class="roads__image-bike">
+          </div>
+          <div class="roads__sticky-child-empty">
+          </div>
+        </div>
+      </div>
 
-      </div>
-      <div class="roads__sticky-container">
-        <div class="roads__container-image-bike">
-          <img src="./images/roads/image-cannondale.jpg" alt="Изображение велосипеда Cannondale Systemsix."
-               class="roads__image-bike">
-        </div>
-        <div class="roads__sticky-child-empty">
-        </div>
-      </div>
     </section>
     <section class="section quote">
       <div class="container quote__container">
@@ -168,11 +170,10 @@
             </li>
           </ul>
           <form class="bicycles__form-select">
-            <div class="bicycles__list_type_select">
+            <div class="bicycles__list-select">
               <div class="bicycles__selectBox" onclick="showRadioButtons()">
                 <select class="bicycles__select">
-                  <option selected class="bicycles__select-option">
-
+                  <option selected class="bicycles__select-option" label=" ">
                   </option>
                 </select>
                 <div class="bicycles__over-select"></div>
@@ -350,7 +351,7 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <h2 class="section__title footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
+      <h2 class="footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
       <form class="footer__form" action="url" name="enter-email">
         <fieldset class="footer__fieldset">
           <input required name="footer-email" type="email" class="footer__email" id="footer-email"

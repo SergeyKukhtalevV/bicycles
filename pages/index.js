@@ -22,7 +22,7 @@ const optionSelectBicycle = content.querySelector('.bicycles__select-option');
 let expanded = false;
 invisibleRadioButtons.forEach((item) => {
   if(item.hasAttribute('checked')) {
-    optionSelectBicycle.textContent = item.nextElementSibling.textContent;
+    optionSelectBicycle.label = item.nextElementSibling.textContent;
   }
 });
 drawDots();
@@ -97,11 +97,10 @@ invisibleRadioButtons.forEach((switchBicycle, index) => {
   switchBicycle.addEventListener('click', () =>{
     showRadioButtons();
     deleteDots();
-    optionSelectBicycle.textContent = switchBicycle.nextElementSibling.textContent;
+    optionSelectBicycle.label = switchBicycle.nextElementSibling.textContent;
     galleryBicycles.forEach((galleryBicycle, key) =>{
       index = (index > 2) ? index - invisibleRadioButtons.length / 2 : index;
       if(key === index) {
-        console.log(optionSelectBicycle.textContent);
         galleryBicycle.classList.add('bicycles__gallery_active');
         drawDots();
         drawActiveDot();
