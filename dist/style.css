@@ -559,7 +559,7 @@
 
 @media screen and (max-width: 1023px) {
   .intro__sticky-container {
-    max-width: 234px;
+    width: 73%;
     top: 41.6%;
     left: 5.4%;
     height: fit-content;
@@ -575,13 +575,12 @@
   max-height: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px 50px;
 }
 
 @media screen and (max-width: 1023px) {
   .intro__container-image-bike {
-    max-width: 234px;
-    max-height: 200px;
     padding: 11px 27px;
   }
 }
