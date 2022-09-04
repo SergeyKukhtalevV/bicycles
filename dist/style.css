@@ -754,7 +754,9 @@
 @media screen and (max-width: 1023px) {
   .slider__description {
     grid-row: 3/4;
+    grid-column: 1/-1;
     margin-top: 30px;
+    max-width: 100%;
   }
 }
 .slider__gallery {
@@ -763,7 +765,7 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  column-gap: 40px;
   width: 100%;
   overflow: hidden;
   grid-column: 1/-1;
@@ -787,9 +789,9 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .slider__photo {
-    max-height: 200px;
+    max-height: 270px;
   }
 }
 .slider__gallery-icon {
