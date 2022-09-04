@@ -134,11 +134,19 @@
     margin-bottom: 4px;
   }
 }
+.button_type_menu-theme-dark {
+  background-image: url(../images/header/icon-burger-theme-dark.svg);
+}
+
 .button_type_close {
   background-image: url(../images/header/icon-close.svg);
   width: 32px;
   height: 32px;
   margin-right: 13px;
+}
+
+.button_type_close-theme-dark {
+  background-image: url(../images/header/icon-close-theme-dark.svg);
 }
 
 .button_type_submit {

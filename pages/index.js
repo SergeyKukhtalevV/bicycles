@@ -1,6 +1,7 @@
 const content = document.querySelector('.page');
 const header = content.querySelector('.header');
 const menuButton = header.querySelector('.button_type_menu');
+//const menuCloseButton = header.querySelector('.button_type_close');
 const nav = header.querySelector('.header__nav');
 const themePageSwitches = content.querySelectorAll('.switch-theme');
 const footer = content.querySelector('.footer');
@@ -37,6 +38,14 @@ drawActiveDot();
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('button_type_close');
   nav.classList.toggle('header__nav_opened');
+  if(nav.classList.contains('header__nav_opened') && content.classList.contains('page_theme_dark')) {
+    menuButton.classList.remove('button_type_burger-theme-dark');
+    menuButton.classList.add('button_type_close-theme-dark');
+  }
+  if(!nav.classList.contains('header__nav_opened') && content.classList.contains('page_theme_dark')) {
+    menuButton.classList.add('button_type_burger-theme-dark');
+    menuButton.classList.remove('button_type_close-theme-dark');
+  }
 });
 
 //Функция переключения темы сайта
@@ -57,6 +66,10 @@ themePageSwitches.forEach((themePageSwitch) => {
         image.classList.add('slider__button-image_theme_dark');
       });
       themePageSwitch.querySelector('.switch-theme__selector').classList.add('switch-theme__selector_theme_dark');
+      menuButton.classList.add('button_type_menu-theme-dark');
+      if(menuButton.classList.contains('button_type_close')) {
+        menuButton.classList.add('button_type_close-theme-dark');
+      }
     } else {
       content.classList.remove('page_theme_dark');
       footer.classList.remove('footer_theme_dark');
@@ -71,6 +84,10 @@ themePageSwitches.forEach((themePageSwitch) => {
         image.classList.remove('slider__button-image_theme_dark');
       });
       themePageSwitch.querySelector('.switch-theme__selector').classList.remove('switch-theme__selector_theme_dark');
+      menuButton.classList.remove('button_type_menu-theme-dark');
+      if(menuButton.classList.contains('button_type_close')) {
+        menuButton.classList.remove('button_type_close-theme-dark');
+      }
     }
   });
 });
