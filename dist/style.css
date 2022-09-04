@@ -909,11 +909,11 @@
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 38px;
 }
 
 @media screen and (max-width: 1279px) {
   .bicycles__text {
+    margin-top: 38px;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 40px;
@@ -946,6 +946,7 @@
 }
 
 .bicycles__selectBox {
+  width: 114px;
   position: relative;
 }
 
@@ -1007,7 +1008,7 @@
 
 @media screen and (max-width: 1279px) {
   .bicycles__gallery {
-    top: 10px;
+    top: 20px;
     display: block;
     margin: 0 auto;
   }
@@ -1035,7 +1036,7 @@
 }
 .bicycles__dots {
   position: absolute;
-  top: 347px;
+  top: 345px;
   left: 46%;
   display: flex;
   column-gap: 5px;
@@ -1073,6 +1074,8 @@
   max-height: 380px;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1088,8 +1091,8 @@
 
 @media screen and (max-width: 1279px) {
   .bicycles__image {
-    margin: 25px auto 0;
-    max-width: 254px;
+    width: 90%;
+    margin: 15px auto 2px;
   }
 }
 .bicycles__model-name {
@@ -1102,7 +1105,7 @@
 
 @media screen and (max-width: 1279px) {
   .bicycles__model-name {
-    margin: 4px auto 0;
+    margin: 0 auto;
     width: fit-content;
     font-size: 14px;
     line-height: 18px;

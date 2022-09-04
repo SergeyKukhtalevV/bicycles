@@ -24,9 +24,9 @@
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 38px;
 
     @media screen and (max-width: 1279px) {
+      margin-top: 38px;
       flex-direction: column;
       align-items: flex-start;
       row-gap: 40px;
@@ -60,6 +60,7 @@
   }
 
   &__selectBox {
+    width: 114px;
     position: relative;
   }
 
@@ -119,7 +120,7 @@
     transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
 
     @media screen and (max-width: 1279px) {
-      top: 10px;
+      top: 20px;
       display: block;
       margin: 0 auto;
     }
@@ -150,7 +151,7 @@
 
   &__dots {
     position: absolute;
-    top: 347px;
+    top: 345px;
     left: 46%;
     display: flex;
     column-gap: 5px;
@@ -188,6 +189,8 @@
     max-height: 380px;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 1279px) {
       max-width: 284px;
@@ -200,8 +203,8 @@
     margin: 20px;
     width: 100%;
     @media screen and (max-width: 1279px) {
-      margin: 25px auto 0;
-      max-width: 254px;
+      width: 90%;
+      margin: 15px auto 2px;
     }
   }
 
@@ -213,7 +216,7 @@
     line-height: 22px;
 
     @media screen and (max-width: 1279px) {
-      margin: 4px auto 0;
+      margin: 0 auto;
       width: fit-content;
       font-size: 14px;
       line-height: 18px;
