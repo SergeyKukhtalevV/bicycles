@@ -3,19 +3,19 @@
     background: linear-gradient(to right, #319E75 0%, #24B47E 100%);
   }
   20% {
-    background: linear-gradient(to right, #319E75 20%, #24B47E 100%);
+    background: linear-gradient(to right, #319E75 0%, #319E75 20%, #24B47E 20%, #24B47E 100%);
   }
   40% {
-    background: linear-gradient(to right, #319E75 40%, #24B47E 100%);
+    background: linear-gradient(to right, #319E75 0%,#319E75 40%, #24B47E 40%, #24B47E 100%);
   }
   60% {
-    background: linear-gradient(to right, #319E75 60%, #24B47E 100%);
+    background: linear-gradient(to right, #319E75 0%, #319E75 60%, #24B47E 60%, #24B47E 100%);
   }
   80% {
-    background: linear-gradient(to right, #319E75 80%, #24B47E 100%);
+    background: linear-gradient(to right, #319E75 0%, #319E75 80%, #24B47E 80%, #24B47E 100%);
   }
   to {
-    background: linear-gradient(to right, #319E75 100%, #24B47E 0%);
+    background: linear-gradient(to right, #319E75 0%, #319E75 100%);
   }
 }
 

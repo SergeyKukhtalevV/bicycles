@@ -27,15 +27,18 @@
   &_type_menu-theme-dark {
     background-image: url(../images/header/icon-burger-theme-dark.svg);
   }
+
   &_type_close {
     background-image: url(../images/header/icon-close.svg);
     width: 32px;
     height: 32px;
     margin-right: 13px;
   }
+
   &_type_close-theme-dark {
     background-image: url(../images/header/icon-close-theme-dark.svg);
   }
+
   &_type_submit {
     opacity: 0;
     visibility: hidden;
