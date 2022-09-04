@@ -259,6 +259,7 @@
   grid-row: 3/4;
   align-self: end;
   justify-self: end;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -344,6 +345,7 @@
   .logo_position_footer {
     display: block;
     grid-row: 3/4;
+    margin-bottom: 4px;
   }
 }
 @keyframes fill {
@@ -1157,7 +1159,7 @@
 
 /*training*/
 .training {
-  padding: 150px 0 120px 0;
+  padding: 103px 0 120px 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1204,7 +1206,7 @@
 .training__application {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
   display: flex;
   flex-direction: row;
   column-gap: 30px;
@@ -1214,6 +1216,7 @@
 @media screen and (max-width: 1023px) {
   .training__application {
     grid-row: 4/5;
+    margin-bottom: 16px;
   }
 }
 .training__image {
@@ -1247,7 +1250,7 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 360px 1fr;
-  row-gap: 50px;
+  row-gap: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1356,12 +1359,14 @@
   grid-row: 3/4;
   grid-column: 1/2;
   align-self: end;
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {
   .footer__description {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

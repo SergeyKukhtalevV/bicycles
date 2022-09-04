@@ -1,5 +1,5 @@
 .training {
-  padding: 150px 0 120px 0;
+  padding: 103px 0 120px 0;
 
   @media screen and (max-width: 1023px) {
     padding: 18px 18px 52px;
@@ -43,7 +43,7 @@
   &__application {
     list-style: none;
     padding: 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 10px 0;
     display: flex;
     flex-direction: row;
     column-gap: 30px;
@@ -51,6 +51,7 @@
 
     @media screen and (max-width: 1023px) {
       grid-row: 4 / 5;
+      margin-bottom: 16px;
     }
   }
 
