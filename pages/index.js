@@ -1,22 +1,32 @@
-const content = document.querySelector('.page');
-const header = content.querySelector('.header');
+const page = document.querySelector('.page');
+const header = page.querySelector('.header');
+const content = page.querySelector('.content');
 const menuButton = header.querySelector('.button_type_menu');
 //const menuCloseButton = header.querySelector('.button_type_close');
 const nav = header.querySelector('.header__nav');
-const themePageSwitches = content.querySelectorAll('.switch-theme');
-const footer = content.querySelector('.footer');
+const themePageSwitches = page.querySelectorAll('.switch-theme');
+const footer = page.querySelector('.footer');
 const footerInput = footer.querySelector('.footer__email')
-const descriptionSections = content.querySelectorAll('.section__description');
-const sliderButtons = content.querySelectorAll('.slider__button');
-const sliderButtonImages = content.querySelectorAll('.slider__button-image');
-const containerRadioButtons = content.querySelector('.bicycles__radio-buttons');
-const invisibleRadioButtons = content.querySelectorAll('.switch-bicycles__invisible-radio');
-const galleryBicycles = content.querySelectorAll('.bicycles__gallery');
-
-const dotsBicycles = content.querySelector('.bicycles__dots');
+const descriptionSections = page.querySelectorAll('.section__description');
+const sliderButtons = page.querySelectorAll('.slider__button');
+const sliderButtonImages = page.querySelectorAll('.slider__button-image');
+const containerRadioButtons = page.querySelector('.bicycles__radio-buttons');
+const invisibleRadioButtons = page.querySelectorAll('.switch-bicycles__invisible-radio');
+const galleryBicycles = page.querySelectorAll('.bicycles__gallery');
+const headerLinks = header.querySelectorAll('.link_position_header');
+headerLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('header__nav_opened');
+    menuButton.classList.remove('button_type_close-theme-dark');
+    menuButton.classList.remove('button_type_close');
+    content.classList.remove('content_close');
+    footer.classList.remove('footer_close');
+  });
+});
+const dotsBicycles = page.querySelector('.bicycles__dots');
 const dotTemplate = document.querySelector('#item-template').content;
 
-const linkIntro = content.querySelector('.link_position_intro');
+const linkIntro = page.querySelector('.link_position_intro');
 linkIntro.addEventListener('mouseenter', () =>{
   linkIntro.classList.add('fill');
 });
@@ -24,7 +34,7 @@ linkIntro.addEventListener('mouseleave', () =>{
   linkIntro.classList.remove('fill');
 });
 
-const optionSelectBicycle = content.querySelector('.bicycles__select-option');
+const optionSelectBicycle = page.querySelector('.bicycles__select-option');
 let expanded = false;
 invisibleRadioButtons.forEach((item) => {
   if(item.hasAttribute('checked')) {
@@ -38,11 +48,13 @@ drawActiveDot();
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('button_type_close');
   nav.classList.toggle('header__nav_opened');
-  if(nav.classList.contains('header__nav_opened') && content.classList.contains('page_theme_dark')) {
+  content.classList.toggle('content_close');
+  footer.classList.toggle('footer_close');
+  if(nav.classList.contains('header__nav_opened') && page.classList.contains('page_theme_dark')) {
     menuButton.classList.remove('button_type_burger-theme-dark');
     menuButton.classList.add('button_type_close-theme-dark');
   }
-  if(!nav.classList.contains('header__nav_opened') && content.classList.contains('page_theme_dark')) {
+  if(!nav.classList.contains('header__nav_opened') && page.classList.contains('page_theme_dark')) {
     menuButton.classList.add('button_type_burger-theme-dark');
     menuButton.classList.remove('button_type_close-theme-dark');
   }
@@ -53,7 +65,7 @@ themePageSwitches.forEach((themePageSwitch) => {
   themePageSwitch.addEventListener('click', () => {
     const selectorThemePage = themePageSwitch.querySelector('.switch-theme__invisible-checkbox');
     if (selectorThemePage.checked) {
-      content.classList.add('page_theme_dark');
+      page.classList.add('page_theme_dark');
       footer.classList.add('footer_theme_dark');
       footerInput.classList.add(('footer__email_theme_dark'));
       descriptionSections.forEach((desc) => {
@@ -71,7 +83,7 @@ themePageSwitches.forEach((themePageSwitch) => {
         menuButton.classList.add('button_type_close-theme-dark');
       }
     } else {
-      content.classList.remove('page_theme_dark');
+      page.classList.remove('page_theme_dark');
       footer.classList.remove('footer_theme_dark');
       footerInput.classList.remove(('footer__email_theme_dark'));
       descriptionSections.forEach((desc) => {
@@ -142,7 +154,7 @@ function createDot() {
 }
 function drawDots() {
 
-  const activeGalleryBicycles = content.querySelector('.bicycles__gallery_active');
+  const activeGalleryBicycles = page.querySelector('.bicycles__gallery_active');
   const itemBicycles = activeGalleryBicycles.querySelectorAll('.bicycles__item');
   const cntItemBicycles = itemBicycles.length;
 
@@ -152,15 +164,15 @@ function drawDots() {
   }
 }
 function deleteDots() {
-  const dotsBicycles = content.querySelectorAll('.bicycles__dot');
+  const dotsBicycles = page.querySelectorAll('.bicycles__dot');
   dotsBicycles.forEach((dot) => {
     dot.remove();
   })
 }
 function drawActiveDot() {
 
-  const dotsBicycles = content.querySelectorAll('.bicycles__dot');
-  const activeGalleryBicycles = content.querySelector('.bicycles__gallery_active');
+  const dotsBicycles = page.querySelectorAll('.bicycles__dot');
+  const activeGalleryBicycles = page.querySelector('.bicycles__gallery_active');
   const itemsBicycles = activeGalleryBicycles.querySelectorAll('.bicycles__item');
   itemsBicycles.forEach((item, n) => {
     if(item.classList.contains('bicycles__item_active')) {
@@ -185,7 +197,7 @@ function toggleDot(event) {
   const activeDot = event.target;
   const ParentDots = activeDot.closest('.bicycles__dots');
   const dots = ParentDots.querySelectorAll('.bicycles__dot');
-  const activeGalleryBicycles = content.querySelector('.bicycles__gallery_active');
+  const activeGalleryBicycles = page.querySelector('.bicycles__gallery_active');
   const itemsBicycles = activeGalleryBicycles.querySelectorAll('.bicycles__item');
 
   dots.forEach((dot, i) => {

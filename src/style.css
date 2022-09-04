@@ -245,6 +245,10 @@
 .content {
   width: 100%;
   margin: 0 auto;
+  display: block;
+}
+.content_close {
+  display: none;
 }
 
 .section {
@@ -369,7 +373,7 @@
 @media screen and (max-width: 767px) {
   .header__nav {
     top: 74px;
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     opacity: 0;
   }
@@ -1130,6 +1134,7 @@
 .footer {
   padding: 80px 0 60px 0;
   background: #EFEFEF;
+  display: block;
 }
 @media screen and (max-width: 1023px) {
   .footer {
@@ -1138,6 +1143,9 @@
 }
 .footer_theme_dark {
   background-color: #2F2F2F;
+}
+.footer_close {
+  display: none;
 }
 .footer__container {
   max-width: 1200px;

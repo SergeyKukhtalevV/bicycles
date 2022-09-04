@@ -28,7 +28,7 @@
 
     @media screen and (max-width: 767px) {
       top: 74px;
-      position: absolute;
+      position: fixed;
       visibility: hidden;
       opacity: 0;
       &_opened {
